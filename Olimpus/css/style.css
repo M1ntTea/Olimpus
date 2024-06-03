@@ -1,0 +1,556 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../font/Roboto/Roboto-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto-bolt";
+    src: url(../font/Roboto/Roboto-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto-italic";
+    src: url(../font/Roboto/Roboto-Italic.ttf) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+/* Переменные */
+:root{
+    --color-dark: #141722;
+    --color-white: #EFE9E0;
+    --color-magenta: #EFE9E0;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px; /* baze 1rem - 10px, rem - соотношение базового шрифта*/
+}
+body{
+    font: 1.2rem/2rem 'Roboto','Arial' sans-serif;
+    /* 1.2 -  размер шрифта | 2rem - Высота между строчками*/
+    color: var(--color-dark);
+}
+a{
+    color:inherit;
+    /* унаследованный цвет у родителя */
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+.container{
+    /* резиновая ширина с ограничением мак ширины */
+    max-width: 1090px;
+    /* border: 3px solid red; */
+    height: auto;
+    margin: 0 auto;   
+}
+/* начало header */
+.logo{
+    font-size: 3rem;
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    font-family: 'Roboto';
+    color: var(--color-dark);
+}
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 42px;
+}
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 34px;
+}
+.btn__header{
+    width: 103px;
+    height: 34px;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    border-radius: 1200px;
+    border-bottom: #141722;
+    border: none; outline: none;
+}
+/* конец header */
+
+/* начала Промо-блока */
+.promo__inner{
+    font-family: 'Roboto';
+}
+.promo__inner h1{
+    width: 830px;
+    height: 60px;
+    font-size: 4rem;
+}
+.promo__inner p{
+    width: 275px;
+    height: 70px;
+    padding-top: 30px;
+    font-size: 1.2rem;
+}
+.btn__promo{
+    width: 125px;
+    height: 28px;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    border-radius: 1200px;
+    border-bottom: #141722;
+    margin-top: 4vh;
+    border: none; outline: none;
+    margin-bottom: 140px;
+}
+/* конец Промо-блока */
+
+/* начало  блока преймуществ*/
+.image1{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: -20px;
+}
+.image2{
+    position: absolute;
+    margin-top: 430px;
+    margin-left: 1020px;
+    width: 250px;
+    height: 250px;
+}
+.adventions__inner {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-magenta);
+    border-radius: 27.6px;
+    height: 500px;
+    margin-bottom: 110px;
+    font-family: 'Roboto';
+}
+
+.adventions__inner__left {
+    flex: 1;
+}
+.adventions__inner__left h1{
+    padding-left: 46px;
+    padding-top: 90px;
+    width: 124px;
+    height: 81px;
+    font-size: 3.3rem;
+}
+
+.adventions__inner__right {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 90px;
+}
+
+.adventions__inner__right > div {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.adventions__inner__right h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.adventions__inner__right p {
+    font-size: 52px;
+    margin: 0;
+}
+
+/* Конец блока преймуществ */
+
+/* Начало блока участвовать */
+.image3{
+    position: absolute;
+    margin-left: -150px;
+    margin-top: -30px;
+}
+.participate__inner{
+    font-family: 'Roboto';
+    display: flex;
+}
+#h1__participate{
+    text-align: center;
+    font-size: 4.2rem;
+    font-family: 'Roboto';
+    margin-bottom: 54px;
+}
+
+/* Левая часть блока */
+#icon__participate1{
+    display: flex;
+    position: relative;
+    margin-top: 36px;
+    margin-left: 406px;
+}
+.inner__bg__left{
+    background-color: #798399;
+    color: var(--color-magenta);
+    width: 545px;
+    height: 400px;
+    border-top-left-radius: 27.6px;
+    border-bottom-left-radius: 27.6px;
+}
+.inner__bg__left h2{
+    font-size: 32px;
+    margin-left: 45px;
+    margin-top: 27px;
+    width: 107px;
+    height: 41px;
+    margin-bottom: 28px;
+}
+.inner__bg__left p{
+    font-size: 1.2rem;
+    line-height: 17.2px;
+    letter-spacing: 0.24px;
+    margin-left: 45px;
+    margin-bottom: 40px;
+    width: 306px;
+    height: 86px;
+    font-weight: 300;
+}
+.inner__bg__left h3{
+    font-size: 1.1rem;
+    margin-left: 67px;
+    width: 34px;
+    height: 22px;
+    font-weight: 300;
+}
+/* Правая часть блока */
+#icon__participate2{
+    display: flex;
+    position: relative;
+    margin-top: 36px;
+    margin-left: 406px;
+}
+.inner__bg__right{
+    background-color: #F3CE8C;
+    color: var(--color-dark);
+    width: 545px;
+    height: 400px;
+    border-top-right-radius: 27.6px;
+    border-bottom-right-radius: 27.6px;
+}
+.inner__bg__right h2{
+    font-size: 32px;
+    margin-left: 45px;
+    margin-top: 27px;
+    width: 107px;
+    height: 41px;
+    margin-bottom: 28px;
+}
+.inner__bg__right p{
+    font-size: 1.2rem;
+    line-height: 17.2px;
+    letter-spacing: 0.24px;
+    margin-left: 45px;
+    width: 450px;
+    height: 70px;
+    font-weight: 300;
+}
+.inner__bg__right h3{
+    font-size: 1.1rem;
+    margin-left: 67px;
+    width: 34px;
+    height: 22px;
+    font-weight: 300;
+    margin-top: 57px;
+}
+/* конец блока участвовать */
+
+/* начало блока новостей */
+.image4{
+    position: absolute;
+    margin-left: 990px;
+    margin-top: 120px;
+    float: right;
+}
+.image5{
+    position: absolute;
+    margin-top: 400px;
+    margin-left: -225px;
+}
+.news__inner{
+    font-family: 'Roboto';
+    display: flex;
+    margin-top: 110px;
+}
+/* левая часть */
+
+.news__inner__left{
+    width: 340px;
+    color: var(--color-dark);
+}
+.news__inner__left h1{
+    width: 232px;
+    height: 54px;
+    font-size: 4rem;
+    line-height: 53.3px;
+}
+#par1{
+    width: 102px;
+    height: 11px;
+    line-height: 10.8px;
+    margin-left: 22px;
+    margin-top: 31px;
+    color: var(--color-magenta);
+}
+#par2{
+    width: 102px;
+    height: 11px;
+    line-height: 10.8px;
+    margin-left: 22px;
+}
+
+/* правая часть */
+.news__inner__right{
+
+    width: 740px;
+    height: 795px;
+    color: var(--color-dark);
+    flex: 1;
+}
+.news1{
+    background: var(--color-magenta);
+    height: 240px;
+    margin-bottom: 16px;
+    border-radius: 27.6px;
+    flex: 1 ;
+}
+.news1 h2{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.news2{
+    background: var(--color-magenta);
+    height: 223px;
+    margin-bottom: 16px;
+    border-radius: 27.6px;
+}
+.news3{
+    background: var(--color-magenta);
+    height: 300px;
+    margin-bottom: 113px;
+    border-radius: 27.6px;
+}
+
+
+/* конец блока новостей */
+
+/* начало блока вопрос */
+.image6{
+    position: absolute;
+    z-index: -1;
+    margin-top: 230px;
+    margin-left: -200px;
+}
+.image7{
+    position: absolute;
+    z-index: -1;
+    margin-top: 30px;
+}
+.faq__inner{
+    font-family: 'Roboto';
+    display: flex;
+    margin-top: 110px;
+}
+/* правая часть */
+.faq__inner__left{
+    width: 350px;
+}
+.faq__inner__left h1{
+    font-size: 4rem;
+    width: 82px;
+    height: 54px;
+    line-height: 53.3px;
+}
+/* левая часть */
+hr{ 
+    box-sizing: content-box; height: 0;
+    width: 733px;
+}
+.faq__inner__right{
+    width: 720px;
+    height: 600px;
+}
+.faq__inner__right__block1{
+    width: 720px;
+    height: 40px;
+}
+.faq__inner__right__block1 h2{
+    margin-left: 35px;
+    margin-bottom: 23px;
+    margin-top: 76px;
+    font-size: 32px;
+    line-height: 40.3px;
+
+}
+.faq__inner__right__block1 p{
+    font-size: 32px;
+    line-height: 40.3px;
+    display: flex;
+    justify-content: end;
+    margin-top: -60px;
+}
+
+.faq__inner__right__block2{
+    width: 720px;
+    height: 40px;
+}
+.faq__inner__right__block2 h2{
+    margin-left: 35px;
+    margin-bottom: 23px;
+    margin-top: 76px;
+    font-size: 32px;
+    line-height: 40.3px;
+
+}
+.faq__inner__right__block2 p{
+    font-size: 32px;
+    line-height: 40.3px;
+    display: flex;
+    justify-content: end;
+    margin-top: -60px;
+}
+
+
+.faq__inner__right__block3{
+    width: 720px;
+    height: 40px;
+}
+.faq__inner__right__block3 h2{
+    margin-left: 35px;
+    margin-bottom: 23px;
+    margin-top: 76px;
+    font-size: 32px;
+    line-height: 40.3px;
+
+}
+.faq__inner__right__block3 p{
+    font-size: 32px;
+    line-height: 40.3px;
+    display: flex;
+    justify-content: end;
+    margin-top: -60px;
+}
+
+
+.faq__inner__right__block4{
+    width: 720px;
+    height: 40px;
+}
+.faq__inner__right__block4 h2{
+    margin-left: 35px;
+    margin-bottom: 23px;
+    margin-top: 76px;
+    font-size: 32px;
+    line-height: 40.3px;
+
+}
+.faq__inner__right__block4 p{
+    font-size: 32px;
+    line-height: 40.3px;
+    display: flex;
+    justify-content: end;
+    margin-top: -60px;
+}
+
+
+.faq__inner__right__block5{
+    width: 720px;
+    height: 40px;
+}
+.faq__inner__right__block5 h2{
+    margin-left: 35px;
+    margin-bottom: 23px;
+    margin-top: 76px;
+    font-size: 32px;
+    line-height: 40.3px;
+}
+.faq__inner__right__block5 p{
+    font-size: 32px;
+    line-height: 40.3px;
+    display: flex;
+    justify-content: end;
+    margin-top: -60px;
+}
+/* конец блока вопрос */
+
+/* начало footer */
+.footer__inner{
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: row;
+    height: 467px;
+    color: var(--color-white);
+    background: var(--color-dark);
+}
+/* левый блок */
+.footer__inner__left{
+    width: 370px;
+    /* flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: flex-start; */
+}
+/* правый блок */
+.footer__inner__right{
+    width: 720px;
+    display: inline-flex;
+    gap: 213px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: flex-start;
+    margin-left: 6%;
+}
+.up h1{
+    font-size: 1.6rem;
+    line-height: 18.5px;
+}
+.footer__menu1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 110px;
+    gap: 23px;
+}
+.footer__menu2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 110px;
+    gap: 23px;
+}
+.footer__menu3{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 110px;
+    gap: 23px;
+}
+#footer__img1{
+    display: flex;
+    margin-top: 170px;
+    margin-left: 55px;
+}
+#footer__img2{
+    display: flex;
+    margin-left: 150px;
+    margin-top: 25px;
+}
